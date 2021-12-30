@@ -1,0 +1,390 @@
+ONLINE-BANK
+
+ONLINE-BANK, es un nuevo banco digital que ofrece créditos de consumo y libranzas en línea. Ahora que usted está en proceso de contratación por el Banco, se le ha asignado una prueba técnica que consiste en realizar una primera implementación de una base de datos que permita administrar las campañas de créditos de consumo y libranza.
+
+Se tienen campañas los cuales pueden ser aplicadas a créditos de consumo o libranza. Un crédito de consumo tiene tasa de interés, número de cuotas de pago y es asesorado por un asesor comercial. El crédito de libranza tiene empresa (donde trabaja el usuario), meses de plazo y tasa de interés.  De los créditos de consumo se tiene un asesor comercial (sólo uno), del cual se desea guardar su nombres, apellidos y sucursal bancaria. 
+
+Luego de analizar el mercado financiero y las necesidades, se decide construir el plan de campañas, en donde aparte de tener las campañas, se puede tener el listado de usuarios inscritos a la plataforma de ONLINE-BANK (el usuario tendrá nombres, apellidos, email, teléfono, alias, contraseña, y fecha de nacimiento. El alias o "username" será el identificador único), y un registro de las campañas de los créditos de consumo o libranza que han sido tomados por los usuarios en su respectiva fecha y hora.
+
+La idea es que usted use estos recursos para desarrollar lo siguiente:
+
+3.     Código SQL para generar dichas tablas, e inserción de datos:
+
+3.1 Crear las siguientes campañas (exactamente):
+
+Toma tú crédito de consumo al 0.72% mensual y compra lo que quieras
+
+Crédito de libre destino al 12% efectivo anual
+
+Realizando tus sueños con crédito de consumo al 2.5% mensual
+
+Tú crédito de consumo amigo con tasa de 0.9 mensual
+
+1, 2 y 3, tú crédito de consumo otra vez con el 0.7 efectivo anual
+
+Crédito de libranza para invertir en lo que quieras al 12% efectivo anual
+
+Libranza para descuento directo de tu nómina Colsubsidio
+
+Toma tú libranza al 0.5% mensual para descuento directo por nómina
+
+Crédito de libranza para conductores SITP al 9% efectivo anual
+
+Trabaja y cumple tus sueños con una libranza por descuento de nómina
+
+Crédito de libranza para empleados de nómina
+
+Para lo que quieras, tú crédito de libranza ya
+
+1,2 y 3, tú libranza está cerca otra vez
+
+ 
+
+3.2 Crear los siguientes asesores comerciales
+
+asr_nombres
+
+asr_apellidos
+
+asr_sucursal_bancaria
+
+Juanquini
+
+Takebuchi
+
+Centro Mayor
+
+Mariana
+
+Blandón
+
+Ensueño
+
+Farceliza
+
+De la Hoz
+
+Unicentro
+
+Cupertino
+
+Lions
+
+Gran Estación
+
+Mariano
+
+Cívico
+
+Américas
+
+ 
+
+ 
+
+3.3 Crear los siguientes créditos de consumo
+
+
+ 
+
+3.4 Crear los siguientes créditos de libranza
+
+cmp_descripcion
+
+lbr_empresa
+
+lbr_meses_plazo
+
+lbr_tasa_interes
+
+Crédito de libranza para invertir en lo que quieras al 12% efectivo anual
+
+La Cuncia S.A
+
+60
+
+1.00
+
+Libranza para descuento directo de tu nómina Colsubsidio
+
+Colsubsidio
+
+48
+
+0.50
+
+Toma tú libranza al 0.5% mensual para descuento directo por nómina
+
+Los Recuerdos Ltda.
+
+36
+
+0.50
+
+Crédito de libranza para conductores SITP al 9% efectivo anual
+
+Conductores S.A
+
+60
+
+0.75
+
+Trabaja y cumple tus sueños con una libranza por descuento de nómina
+
+Pardo Rojo Ltda.
+
+60
+
+0.50
+
+Crédito de libranza para empleados de nómina
+
+Manaure S.A.S
+
+36
+
+0.75
+
+Para lo que quieras, tú crédito de libranza ya
+
+Rio Frío Ltda.
+
+24
+
+0.90
+
+1,2 y 3, tú libranza está cerca otra vez
+
+Río Bravo S.A.S
+
+48
+
+0.85
+
+ 
+
+3.5 Crear los siguientes usuarios registrados
+
+usr_alias
+
+usr_nombres
+
+usr_apellidos
+
+usr_email
+
+usr_celular
+
+usr_clave
+
+usr_fecha_nto
+
+diva
+
+Ana
+
+Diaz
+
+adiaz@gmail.com
+
+3124578905
+
+76$3&gg
+
+20/09/1978
+
+dreamer
+
+Luis
+
+Rojas
+
+lrojas@gmail.com
+
+3185241967
+
+nsbdnbs
+
+11/10/1995
+
+green
+
+Jorge
+
+Rodriguez
+
+jorgeGreen@gmail.com
+
+3208956726
+
+1234%$#
+
+20/12/2000
+
+lucky
+
+Pedro
+
+Perez
+
+pp@gmail.com
+
+3221589161
+
+x1y2z3
+
+25/10/2000
+
+malopez
+
+Maria
+
+Lopez
+
+malopez@gmail.com
+
+3501531561
+
+98774n
+
+4/03/1980
+
+neon
+
+Nelson
+
+Ruiz
+
+nelson2@gmail.com
+
+3201643458
+
+45&$%
+
+25/08/1992
+
+ninja
+
+Andres
+
+Cruz
+
+acninja@gmail.com
+
+3181513313
+
+pass123
+
+30/10/1990
+
+rose
+
+Claudia
+
+Mendez
+
+florm@gmail.com
+
+3108972635
+
+flor121
+
+25/01/1990
+
+ 
+
+3.6 Registrar las siguientes campañas aplicadas
+
+cpa_user; cmp_descripcion; cpa_fecha
+
+'lucky'; 'Toma tú crédito de consumo al 0.72% mensual y compra lo que quieras'; '2017-10-25 20:00:00'
+
+'malopez'; 'Toma tú crédito de consumo al 0.72% mensual y compra lo que quieras'; '2018-05-20 20:30:00'
+
+'diva'; 'Crédito de libre destino al 12% efectivo anual'; '2019-05-20 20:30:00'
+
+'green'; 'Crédito de libre destino al 12% efectivo anual'; '2020-01-10 17:30:20'
+
+'diva'; 'Realizando tus sueños con crédito de consumo al 2.5% mensual'; '2018-06-22 21:30:00'
+
+'lucky'; 'Tú crédito de consumo amigo con tasa de 0.9 mensual'; '2019-03-15 18:30:00'
+
+'green'; 'Tú crédito de consumo amigo con tasa de 0.9 mensual'; '2020-02-15 20:30:20'
+
+'green';  1, 2 y 3, tú crédito de consumo otra vez con el 0.7 efectivo mensual; '2020-03-17 18:30:20'
+
+'diva'; 'Crédito de libranza para invertir en lo que quieras al 12% efectivo anual'; '2020-03-17 15:30:20'
+
+'dreamer'; 'Crédito de libranza para invertir en lo que quieras al 12% efectivo anual'; '2020-03-17 15:30:20'
+
+'dreamer'; 'Libranza para descuento directo de tu nómina Colsubsidio'; '2020-04-10 18:30:20'
+
+'ninja'; 'Toma tú libranza al 0.5% mensual para descuento directo por nómina'; '2020-02-17 20:30:20'
+
+'lucky'; 'Crédito de libranza para conductores SITP al 9% efectivo anual'; '2019-05-20 20:30:00'
+
+'malopez'; 'Crédito de libranza para conductores SITP al 9% efectivo anual'; '2020-01-20 20:30:00'
+
+'ninja'; 'Crédito de libranza para conductores SITP al 9% efectivo anual'; '2020-02-20 16:30:20'
+
+'rose'; 'Trabaja y cumple tus sueños con una libranza por descuento de nómina'; '2020-03-20 21:30:20'
+
+'ninja'; 'Crédito de libranza para empleados de nómina'; '2020-03-27 18:30:20'
+
+ 
+
+NOTA 1: Para la creación de cada una de las tablas e inserción de datos generar un script de sql (Un script por cada tabla)
+
+Ejemplo: Para crear la tabla asesor comercial se debe crear el siguiente script:
+
+CREATE TABLE asesor_comercial(
+
+    asr_id  int primary key,
+
+    asr_nombres  char(20),
+
+    asr_apellidos char(20),
+
+    asr_sucursal_bancaria  char(40)
+
+);
+
+INSERT INTO asesor_comercial VALUES (101, "Juanquini","Takebuchi", "Centro Mayor");
+
+INSERT INTO asesor_comercial VALUES (102, "Mariana", "Blandón", "Ensueño");
+
+INSERT INTO asesor_comercial VALUES (103, "Farceliza", "De la Hoz", "Unicentro");
+
+INSERT INTO asesor_comercial VALUES (104, "Cupertino", "Lions", "Gran Estación");
+
+INSERT INTO asesor_comercial VALUES (105, "Mariano", "Cívico", "Américas");
+
+ 
+
+NOTA 2: No deje líneas en blanco antes del créate
+
+4.     Código SQL para Modificar los siguientes datos:
+
+4.1 Cambiar el número de cuotas del crédito de consumo “Crédito de libre destino al 12% efectivo anual” a 60 cuotas.
+
+4.2 Cambiar el teléfono del usuario "ninja" por 3115678432
+
+4.3 Borrar la campaña aplicada “'Tú crédito de consumo amigo con tasa de 0.9 mensual'” del usuario "green"
+
+
+NOTA 3: Generar un archivo script sql para las modificaciones y borrados
+
+5.     5. Código SQL para realizar las siguientes consultas:
+
+
+5.1 Mostrar la descripción de campañas de créditos de consumo y libranza ordenadas alfabéticamente.
+
+5.2 Mostrar la información de las campañas de crédito de consumo (descripción de la campaña, cuotas y tasa de interés) ordenadas por tasa de interés.
+
+5.3 Mostrar la descripción de las campañas de crédito de consumo asesorados por la asesora Mariana Blandón ordenados ordenadas por descripción.
+
+5.4 Mostrar la información de campañas (solo descripción) a las que ha aplicado un usuario con alias "lucky", ordenadas por descripción.
+
+5.5 Mostrar la información de los distintos usuarios (alias, nombres y apellidos) que han aplicado a la campaña de libranza ordenados alfabéticamente por alias.
+
+5.6 Mostrar cuántas campañas de crédito de consumo tienen un número de cuotas igual a 60.
